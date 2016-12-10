@@ -28,8 +28,8 @@ CodeBook.md has two parts. Part 1 describes the variables and the transformation
 
 **TidyMeanStd.csv:** 
 Tidy data set with the average of each variable of mean and standard deviation for each activity and each subject. Please use the following code to read it:
+
          FileUrl<"https://github.com/ssbpv/FinalProjectGCD/blob/master/TidyMeanStd.csv"
-         
          data <- read.csv(FileUrl, header = TRUE)
          View(data)
 
