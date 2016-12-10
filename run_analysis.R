@@ -1,5 +1,5 @@
 # R script for collecting and cleaning data set
-#Reference: https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/
+
 
 rm(list=ls()) # clears variables in the environment
 
@@ -86,13 +86,14 @@ mergedData<-merge(TestDF,TrainDF,all=TRUE,sort = FALSE)
 # Group_by followed by summarise_each allows for calculating the averages for each activity
         # for each subject id
         tidyMeanSet<- group_by(meanStdDF2, ID, Activity) %>% summarise_each(funs(mean))
-# The data set generated in the previous step is exported to a csv file
-        write_csv(tidyMeanSet,"TidyMeanStd.csv")
+# The data set generated in the previous step is exported to a text file
+        write.table(tidyMeanSet,"TidyMeanStd.txt",row.names = FALSE)
         
 #Please uncomment and use following code to read the tidy data set.
-       # FileUrl<-"https://github.com/ssbpv/FinalProjectGCD/blob/master/TidyMeanStd.csv"
-       # data <- read.csv(FileUrl, header = TRUE)
+       # FileUrl<-"https://github.com/ssbpv/FinalProjectGCD/blob/master/TidyMeanStd.txt"
+       # data <- read.table(FileUrl, header = TRUE)
        # View(data)
+        ##Reference: https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/
 
 
 

@@ -6,9 +6,9 @@ output: html_document
 ---
 
 
-## CodeBook for run_analysis.R and TidyMeanStd.csv
+## CodeBook for run_analysis.R and TidyMeanStd.txt
 
-CodeBook.md has two parts. Part 1 describes the variables and the transformation of the data within the run_analysis.R script. Part 2 contains the description of the variables in the "TidyMeanStd.csv" data set.
+CodeBook.md has two parts. Part 1 describes the variables and the transformation of the data within the run_analysis.R script. Part 2 contains the description of the variables in the "TidyMeanStd.txt" data set.
 
 ### Part 1: for run_analysis.R
 
@@ -36,10 +36,10 @@ CodeBook.md has two parts. Part 1 describes the variables and the transformation
 
 **meanStdDF2:** data frame where meanStdDF and IDLabel are column binded and then arranged first using ID and then by Activity. Subsequently the activity numbers are replaced by the corresponding descriptive names. In the next step column names are cleaned up using gsub for easier visualiztion. The column names are described in detail in Part 2.
 
-**tidyMeanSet:** contains independent tidy data set with the average of each variable for each activity and each subject created using group_by first by ID then activity followed by summarise_each. This data set is then written into a csv file "TidyMeanStd.csv".
+**tidyMeanSet:** contains independent tidy data set with the average of each variable for each activity and each subject created using group_by first by ID then activity followed by summarise_each. This data set is then written into a text file "TidyMeanStd.txt".
 
-### Part 2: for TidyMeanStd.csv
-Listed below are the column names and description of the variables in "TidyMeanStd.csv". This data file is a subset of the 'mergedData' and contains only information of the average of each variable of mean and standard deviation for each activity and each subject.
+### Part 2: for TidyMeanStd.txt
+Listed below are the column names and description of the variables in "TidyMeanStd.txt". This data file is a subset of the 'mergedData' and contains only information of the average of each variable of mean and standard deviation for each activity and each subject.
 
 **1 ID:** column contains the subject identification number.
 
