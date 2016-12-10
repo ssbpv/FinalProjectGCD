@@ -89,7 +89,7 @@ mergedData<-merge(TestDF,TrainDF,all=TRUE,sort = FALSE)
 # The data set generated in the previous step is exported to a text file
         write.table(tidyMeanSet,"TidyMeanStd.txt",row.names = FALSE)
         
-#Please uncomment and use following code to read the tidy data set.
+#Please uncomment and use following code to read the tidy data set if reading from github.
        # FileUrl<-"https://github.com/ssbpv/FinalProjectGCD/blob/master/TidyMeanStd.txt"
        # data <- read.table(FileUrl, header = TRUE)
        # View(data)
