@@ -90,7 +90,7 @@ mergedData<-merge(TestDF,TrainDF,all=TRUE,sort = FALSE)
         write_csv(tidyMeanSet,"TidyMeanStd.csv")
         
 #Please uncomment and use following code to read the tidy data set.
-       # FileUrl<"https://github.com/ssbpv/FinalProjectGCD/blob/master/TidyMeanStd.csv"
+       # FileUrl<-"https://github.com/ssbpv/FinalProjectGCD/blob/master/TidyMeanStd.csv"
        # data <- read.csv(FileUrl, header = TRUE)
        # View(data)
 

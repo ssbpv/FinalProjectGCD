@@ -27,7 +27,10 @@ README.md, CodeBook.md,run_analysis.R script and TidyMeanStd.csv
 CodeBook.md has two parts. Part 1 describes the variables and the transformation of the data within the run_analysis.R script. Part 2 contains the description of the variables in the "TidyMeanStd.csv" data set.
 
 **TidyMeanStd.csv:** 
-Tidy data set with the average of each variable of mean and standard deviation for each activity and each subject.
+Tidy data set with the average of each variable of mean and standard deviation for each activity and each subject. Please use the following code to read it:
+         FileUrl<"https://github.com/ssbpv/FinalProjectGCD/blob/master/TidyMeanStd.csv"
+         data <- read.csv(FileUrl, header = TRUE)
+         View(data)
 
 **run_analysis.R:** 
 
@@ -42,10 +45,10 @@ Tidy data set with the average of each variable of mean and standard deviation f
         -Part 3 assigns descriptive names to activities and part 4 cleans up the names for the variables. 
         
         -Part 5 creates a second, independent tidy data set with the average of each variable for each activity and each subject. I have opted for a wide format representation of the data though both wide and narrow formats are acceptable for this assignment (reference:[David Hood's blog](https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/)). I have used the write_csv function to generate a csv file of the tidy data set "TidyMeanStd.csv". Please use the following code to read it:
-        ``` FileUrl<"https://github.com/ssbpv/FinalProjectGCD/blob/master/TidyMeanStd.csv"
+         FileUrl<"https://github.com/ssbpv/FinalProjectGCD/blob/master/TidyMeanStd.csv"
          data <- read.csv(FileUrl, header = TRUE)
          View(data)
-```
+
         
 
 
